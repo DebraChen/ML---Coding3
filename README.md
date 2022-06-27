@@ -92,7 +92,6 @@ Errors:
 One of the students used PyTorch to train the data, but it doesn’t work well, so I decided to stick to trying styleGan2 and styleGan2-ada.  
 I could use the TFRecords from the process, but the .pkl files trained from the code could not be used, it was not been fully trained. We could tell from the size of the weights that I trained using this code, it was just 2kb for each .pkl. The weight was not trained well, but I did not realise at that time, that it made me lost in the process for a week, to ‘debug’ the code and download the ‘missing’ library to let the broken file run in the code.  
   
-    
 ### D. Training the .pkl  
 My work, https://colab.research.google.com/drive/1CCXqgTq1MeHifXdzDjGrxcQC5KKCKtdL?usp=sharing  
 Notes:   
@@ -110,7 +109,6 @@ and
 remember to change the newest path of .pkl.  
 (https://www.reddit.com/r/StyleGan/comments/pry0ah/how_to_resume_training_pytroch_style_gan_2_ada/)  
   
-    
 ### E. Training the model  
 My work, https://colab.research.google.com/drive/1omSj-oHqZf37M3mpGCjg-SLjatrjpGqa?usp=sharing  
 Notes:  
