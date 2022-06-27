@@ -1,4 +1,4 @@
-Trained 2 datasets see in the link，models are still running now， waiting for more details
+Trained 2 datasets see in the link，models are still running now， waiting for more detaild dataset
   
 Map  
 https://drive.google.com/drive/folders/1-8LzMN-X6PuVb3Jrpv9mAeyHYEokzCKh?usp=sharing
