@@ -45,10 +45,12 @@ https://colab.research.google.com/github/ArthurFDLR/GANightSky/blob/main/GANight
 4. Train the model in Lucid dreams  
   
 ## Process and notes  
-A. Preparing images  
+### A. Preparing images  
 It goes all good with tools, Pindown and Fatkun.  
 One of my collect boards goes here, https://www.pinterest.co.uk/chenqupei/dataset01/  
-B. Crop dataset images  
+  
+    
+### B. Crop dataset images  
 B1, Cut in terminal (Code from Terence):  
 yuweichen@Yuweis-MBP ~ % ls  
 yuweichen@Yuweis-MBP ~ % cd dataset-tools  
@@ -62,13 +64,13 @@ Errors:
 Miss use pip and pip3  
 Miss use of python and python3  
   
-  
 B2, Crop Multiple Images in Photoshop (crop each faces, product, and so on in different position in each picture).  
 Tutorial:   
 https://www.youtube.com/watch?v=AdTEeXYfENc  
 https://www.16xx8.com/photoshop/jiaocheng/29410_all.html  
   
-C. Transfer the dataset images into TFRecords  
+    
+### C. Transfer the dataset images into TFRecords  
 C1, use visual studio in windows or Terminal in Apple–Intel architecture(not M1):  
 yuweichen@Yuweis-MacBook ~ % cd desktop  
 yuweichen@Yuweis-MacBook desktop % cd dataset-tools  
@@ -90,7 +92,8 @@ Errors:
 One of the students used PyTorch to train the data, but it doesn’t work well, so I decided to stick to trying styleGan2 and styleGan2-ada.  
 I could use the TFRecords from the process, but the .pkl files trained from the code could not be used, it was not been fully trained. We could tell from the size of the weights that I trained using this code, it was just 2kb for each .pkl. The weight was not trained well, but I did not realise at that time, that it made me lost in the process for a week, to ‘debug’ the code and download the ‘missing’ library to let the broken file run in the code.  
   
-D. Training the .pkl  
+    
+### D. Training the .pkl  
 My work, https://colab.research.google.com/drive/1CCXqgTq1MeHifXdzDjGrxcQC5KKCKtdL?usp=sharing  
 Notes:   
 Firstly, delete the local path cells, and add ‘!pip install -U numpy==1.18.5’ to make sure we have the right version according to the error.  
@@ -107,7 +110,8 @@ and
 remember to change the newest path of .pkl.  
 (https://www.reddit.com/r/StyleGan/comments/pry0ah/how_to_resume_training_pytroch_style_gan_2_ada/)  
   
-E. Training the model  
+    
+### E. Training the model  
 My work, https://colab.research.google.com/drive/1omSj-oHqZf37M3mpGCjg-SLjatrjpGqa?usp=sharing  
 Notes:  
 I failed so many times, because of battery low, restart or reconnecting the runtime, and wrong datasets, I found example 2 could use .pkl as input, so I don’t need to overwrite the code, (which I did in examples 1 and ran into bugs). Also, uploading the files and music into google drive and using the code that I mentioned previously could help to call the drive file in the Colab code  
@@ -115,13 +119,13 @@ from google. colab import drive
 drive.mount(‘/content/drive’)  
 Which saves a bit of time after restarting the collab.  
 There were so many errors, caused by a broken dataset.   
-
+  
   
 ## Summary  
 There are still some more ways that I could prepare a dataset to use in the code, I was just focused on one way at this time, my output is still a bit raw, need some more time to train it to learn some more details.  
   
 I felt white background and grey pics took less time to train the weight compared to the colourful, full pixels, or full of details images.  
   
-The output visual is good to use for a music video but to make it more interactive with real-time control or music, I still need to work more on it. Hopefully, I could figure it out and make more exciting projects. I felt it is not easy to train machine learning, but once it works, I feel so proud of it.  
+The output visual is good to use for a music video but to make it more interactive with real-time control or music, I still need to work more on it. Before that, I will training more datasets to cooperate with other musicians and preparing for the up coming shows. Hopefully, I could make more exciting projects. I felt it is not easy to train machine learning, but once it works, I feel so proud of it. Thanks CCI, Thanks to Rebeca and Terence.  
   
 Github：https://github.com/DebraChen/ML---Coding3  
